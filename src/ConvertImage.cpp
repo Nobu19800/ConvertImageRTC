@@ -50,6 +50,7 @@ ConvertImage::ConvertImage(RTC::Manager* manager)
 
     // </rtc-template>
 {
+	iplimage = NULL;
 }
 
 /*!
