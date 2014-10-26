@@ -8,10 +8,8 @@
 
 #   rtc-template -bcxx --module-name=ConvertImage 
 #   --module-desc='Convert Image Component' --module-version=1.0.0 --module-vendor=Miyamoto Nobuhiko 
-#   --module-category=TEST --module-comp-type=STATIC 
+#   --module-category=TES --module-comp-type=STATIC 
 #   --module-act-type=PERIODIC --module-max-inst=1 
-#   --config=string_encode:string:off --config=int_encode_quality:int:75 
-#   --inport=imageIn:RTC::CameraImage --outport=imageOut:RTC::CameraImage 
 
 
 ======================================================================
@@ -22,7 +20,7 @@ Module Name: ConvertImage
 Description: Convert Image Component
 Version:     1.0.0
 Vendor:      Miyamoto Nobuhiko
-Category:    TEST
+Category:    TES
 Kind:        DataFlowComponent
 Comp. Type:  STATIC
 Act. Type:   PERIODIC
@@ -45,11 +43,11 @@ Lang Type:
 
 [on_shutdown]
 
-[on_activated]     implemented
+[on_activated]
 
-[on_deactivated]   implemented
+[on_deactivated]
 
-[on_execute]       implemented
+[on_execute]
 
 [on_aborting]
 
@@ -66,24 +64,6 @@ Lang Type:
 ======================================================================
 # <rtc-template block="inport">
 
-	Name:        imageIn
-	PortNumber:  0
-	Description: 
-	PortType: 
-	DataType:    RTC::CameraImage
-	MaxOut: 
-	[Data Elements]
-		Name:
-		Type:            
-		Number:          
-		Semantics:       
-		Unit:            
-		Frequency:       
-		Operation Cycle: 
-		RangeLow:
-		RangeHigh:
-		DefaultValue:
-
 
 # </rtc-template>
 
@@ -91,24 +71,6 @@ Lang Type:
     OutPorts definition
 ======================================================================
 # <rtc-template block="outport">
-
-	Name:        imageOut
-	PortNumber:  0
-	Description: 
-	PortType: 
-	DataType:    RTC::CameraImage
-	MaxOut: 
-	[Data Elements]
-		Name:
-		Type:            
-		Number:          
-		Semantics:       
-		Unit:            
-		Frequency:       
-		Operation Cycle: 
-		RangeLow:
-		RangeHigh:
-		DefaultValue:
 
 
 # </rtc-template>
@@ -124,23 +86,6 @@ Lang Type:
     Configuration definition
 ======================================================================
 # <rtc-template block="configuration">
-	Configuration:
-		Name:             string_encode
-		Description:     
-		Type:            string
-		DefaultValue:     off
-		Unit:            
-		Range:           
-		Constraint:      
-
-		Name:             int_encode_quality
-		Description:     
-		Type:            int
-		DefaultValue:     75
-		Unit:            
-		Range:           
-		Constraint:      
-
 # </rtc-template> 
 
 This software is developed at the National Institute of Advanced
