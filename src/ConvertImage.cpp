@@ -19,7 +19,7 @@ static const char* convertimage_spec[] =
     "description",       "Convert Image Component",
     "version",           "1.0.0",
     "vendor",            "Miyamoto Nobuhiko",
-    "category",          "TEST",
+    "category",          "ImageProcessing",
     "activity_type",     "PERIODIC",
     "kind",              "DataFlowComponent",
     "max_instance",      "1",
